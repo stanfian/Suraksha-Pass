@@ -1,0 +1,11 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--bg:#f1f5f9;--fg:#0f172a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#e2e8f0;--fg:#0f172a}}
+:root[data-theme="dark"]{--bg:#e2e8f0;--fg:#0f172a}
+body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}
+.chat{background:#e5ddd5}
+@keyframes pop{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.pop{animation:pop .25s ease}
